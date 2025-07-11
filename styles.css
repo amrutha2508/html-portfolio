@@ -48,7 +48,7 @@ html, body {
 }
 .name{
     flex-grow: 0.5;
-    background-color: green;
+    background-color: #EFEFEF;
     width:100%;
     flex-basis:0;
 }
@@ -58,7 +58,7 @@ p{
     font-size: x-large;
 }
 .list{
-    background-color: red;
+    background-color: #EFEFEF;
     flex-grow: 6;
     width: 100%;
 }
@@ -69,13 +69,49 @@ p{
     flex-direction: column;
 }
 
+.blank-r1{
+    background-color: #205375;
+    flex-grow:0.5
+}
+.blank-r2{
+    background-color: #205375;
+    flex-grow:0.25
+}
 #r1{
     background-color: #205375;
-    flex-grow: 1;
+    flex-grow: 0.1;
+    display: flex;
 }
+
 #r2{
     background-color: #112B3C;
     flex-grow: 4;
 }
+a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
+}
+.list > ul{
+    align-items: center;
+    margin-left: 25%;
+}
 
+
+#r1 button {
+    flex-grow: 0.5;                  /* 🔑 Each button takes equal width */
+    margin: 0px 10px;                /* Optional: spacing between buttons */
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+#r1 button:hover {
+    background-color: #ddd;
+}
 
