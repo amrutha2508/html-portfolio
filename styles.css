@@ -100,18 +100,27 @@ a{
 }
 
 
-#r1 button {
+#r1 #button-container button{
     flex-grow: 0.5;                  /* 🔑 Each button takes equal width */
     margin: 0px 10px;                /* Optional: spacing between buttons */
     padding: 10px;
     font-size: 14px;
     cursor: pointer;
     border: none;
-    background-color: #eee;
+    background-color: #205375;
     border-radius: 5px;
+    color: #EFEFEF;
   }
+
+#r1 #button-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
   
-#r1 button:hover {
-    background-color: #ddd;
+#r1 #button-container button:hover {
+    background-color: #112B3C;
+    color: #EFEFEF;
 }
 
