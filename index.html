@@ -1,108 +1,45 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Amrutha Karuturi</h1>
-        <img src = "./assets/images/photo.jpg"  width="200" height="200" />
-        <p>I'm a Data Science Graduate.</pp>
-        <h2>Education</h2>
-            <ul>
-                <li>Masters in Data Science - Statistics, Rutgers University</li>
-                <li>Bachelors of Technology Computer Science, Indian Institute of Technology</li>
-            </ul>
-        <h2>Professional Experience</h2>
-            <ul>
-                <li>
-                    <h3>Data Science Research Assistant | Bristol Myers Squibb & Rutgers University</h3>
-                    <ul>
-                        <li>Designed and implemented an AI-powered pipeline using large language models (LLMs) to automate the mapping of
-                            inconsistencies in historical medical data to standardized naming conventions, enhancing data reliability for analysis.</li>
-                        <li>Augmented the training set from 32 to 45,456 samples using regex patterns, abbreviation expansion, token deletion,
-                            and oversampling to support robust LLM training.</li>
-                        <li>Developed a hierarchical classification framework combining Bio-BERT for attribute grouping with a FastText and
-                            neural network ensemble to resolve semantic variations, achieving 42.2% classification accuracy, generating
-                            prediction sets for 47.6% of entries to streamline manual review, and flagging 10.2% of data as junk.</li>
-                        <li>Worked closely with stakeholders to gather business requirements, extract and analyze data, define metrics, and
-                            deliver insightful reports.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Recitation Instructor | Department of Computer Science & Rutgers University</h3>
-                    <ul>
-                        <li>Communicated data science and machine learning concepts clearly to diverse audiences.</li>
-                        <li>Developed practical, hands-on materials to support student understanding of data validation, feature engineering,
-                            predictive modeling, and statistical analysis.</li>
-                    </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="container">
+        <!--left box -->
+        <div id="l">
+            <div class="blank blank-1"></div>
+            <div class="photo">
+                <img src="/assets/images/photo.JPG">
+            </div>
+            <div class="blank blank-05"></div>
+            <div class="name">
+                <p>Amrutha Karuturi</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href = "https://github.com/amrutha2508" target="_blank">GitHub</a></li>
+                    <li><a href = "https://www.linkedin.com/in/amrutha-karuturi-017096245/" target="_blank">LinkedIn</a></li>
+                    <li><a href = "https://public.tableau.com/app/profile/amrutha.k2872/vizzes">Tableau</a></li>
+                    <a></a>
+                </ul>
+            </div>
+        </div>
+        <!-- right box -->
+        <div id="r">
+            <!-- right box1 -->
+            <div id="r1">
 
-                </li>
-            </ul>
-        <h2>TECHNICAL SKILLS</h2>
-        <ul>
-            <li>Programming & Tools: Python, R, SQL, MongoDB, Tableau, Excel, Git, Jupyter Notebook.</li>
-            <li>Libraries & Frameworks: NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn, TensorFlow, PyTorch, NLTK, Transformers</li>
-            <li>Cloud & Infrastructure: <a href ="https://www.credly.com/badges/d43e9499-60ae-4c8f-a943-e9c53a25432c/public_url">AWS Certified Cloud Practitioner</a></li>
-            <li>Core Domain Expertise: ETL, Data Analytics & Visualization, Statistical Analysis, Text Classification, ML, NLP , Large
-            <li>Language Models (LLMs), Neural Networks.</li>
-            <li>Certifications: Google Advanced Data Analytics Specialization, IBM Databases and SQL Certification</li>
-        </ul>
-        <h2>Academic Projects</h2>
-        <ul>
-            <li>
-                <h3>Fashion CLIP|Multi Modal, Vision, LLMs, Transformers</h3>
-                <ul>
-                    <li>Fine-tuned a CLIP model on a large-scale fashion dataset, aligning product images with both structured and natural
-                    language captions to improve image–text retrieval accuracy.</li>
-                    <li>Developed data preprocessing strategies to extract and normalize brand names and product attributes, improving
-                    model generalization across diverse fashion domains.</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Analyzing AI Narratives – Utopia vs. Dystopia|Transformers, LLMs, Tableau, Plotly</h3>
-                <ul>
-                    <li>Leveraged BERTopic to extract themes from AI-related news headlines, used OpenAI prompting for topic labeling, and
-                        developed a multi-label classifier for nine domains (e.g., AI in Education, AI in Careers, AI Ethics, AI in Industries).</li>
-                    <li>Applied lexical methods (VADER, AFINN) and pre-trained models (RoBERTa, fear-mongering model) to analyze AI
-                        narratives and identify dominant emotional tones in news coverage</li>
-                    <li>Conducted n-gram analysis to identify key concerns (e.g., job displacement, misinformation, AI governance) and
-                        developed interactive Dashboards to visualize semantic clusters and narrative trends.</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Twitter Search Application | PostgreSQL, MongoDB, Caching</h3>
-                <ul>
-                    <li>Built a search application for a Twitter dataset that allows users to perform searches based on usernames, hashtags,
-                        keywords, top ten metrics, and time ranges.</li>
-                    <li>Used PostgreSQL and MongoDB for user and tweet data storage respectively. A cache system is implemented using
-                        LRU technique. A simple user-friendly UI is developed for users to perform searches.</li>
-                </ul>
-            </li>
-        </ul>
-        <h2>HONORS & ACTIVITIES</h2>
-        <ul>
-            <li><a href = "https://www.linkedin.com/in/amrutha-karuturi-017096245/overlay/1749839092293/single-media-viewer/?profileId=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10">Neville O'Reilly Award</a>, Department of Statistics, Rutgers university</li>
-            <li><a href = "https://www.linkedin.com/posts/rutgers-masters-in-public-informatics_publicinformatics-rutgersmpi-datascience-activity-7304210057297068032-cQoT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10">Finalist</a> in RAISE-25 Hackathon, Rutgers University</li>
-            <li><a href = "https://www.linkedin.com/posts/amrutha-karuturi-017096245_machinelearning-ai-llms-activity-7300892608505995266-HgbG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10">Winner</a> of 2024 Bristol Myers Squibb Hackathon, Rutgers University</li>
-            <li>Ranked in Top 0.4% amongst 1.2 million in a nationwide engineering entrance examination - JEE Advanced.</li>
-        </ul>
+            </div>
+            <!-- right box2 -->
+            <div id="r2">
 
-    </body>
+            </div>
+
+        </div>
+    </div>
+</body>
 </html>
