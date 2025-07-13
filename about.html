@@ -6,51 +6,100 @@
     <title>Document</title>
     <style>
         body{
-            /* font-family: var(--ff-poppins);  */
             background-color: #112B3C;
         }
-        p{
-            color:white
+        .about-content{
+            background-color: transparent;
+            padding: 10px;
         }
-        h1{
+        .about-content p{
+            color:white;
+        }
+        .about-content h1{
             color:#F66B0E;
         }
-        a{
+        .about-content a{
             color: white;
         }
-        li{
+        .about-content li{
             color: white;
         }
-        .bold-text{
+        .about-content .bold-text{
             font-weight: bold;
         }
-        img{
+        .about-content img{
             height:150px;
             width:200px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: auto auto;
+            gap: 10px;
+        }
+        .grid-boxes{
+            display: flex;
+            flex-direction: column;
+            border:3px solid #EFEFEF;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .grid-boxes p{
+            margin:0;
+        }
+        .grid-boxes img{
+            padding-top: 10px;
+        }
+        .grid-link{
+            text-decoration: none;
+        }
+        .grid-boxes:hover {
+            border-color: yellowgreen;
+            background-color: yellowgreen;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>About me</h1>
-    <p>
-        Hello, I'm Amrutha Karuturi, an aspiring Data Scientist and Analyst, on a journey of innovation and exploration. Currently I'm looking for full time positions in
-        <a class="about-p-highlight">Data Science</a>,
-        <a class="about-p-highlight">Data Analyst</a>
-        <a class="about-p-highlight">Machine Learning</a>. . 
-        I completed my Master of Science degree in Data Science at 
-        <a class="about-p-highlight" href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers University - New Brunswick</a> in May, 2025. I have a bachelors degree in Computer science from IIT Jodhpur, India.
-        My academic journey revolved around advanced coursework, encompassing topics such as Statistical Modeling, Statistical Learning, Data Mining, 
-        Natural Language Processing, Data Wrangling and more.
-      </p>
-    <h1>Honors and Activities</h1>
-    <ul>
-            <li><span class="bold-text">Neville O'Reilly Award</span>, Department of Statistics, Rutgers university</li>
-            <img src="assets/images/oreilly-award.png">
-            <img src="">
-            <li><span class="bold-text">Finalist</span> in RAISE-25 Hackathon, Rutgers University</li>
-            <li><span class="bold-text">Winner</span> of 2024 Bristol Myers Squibb Hackathon, Rutgers University</li>
-            <img src="">
-            <li>Ranked in Top 0.4% amongst 1.2 million in a nationwide engineering entrance examination - JEE Advanced.</li>
-    </ul>
+    <div class="about-content">
+        <h1>About me</h1>
+        <p>
+            Hello, I'm Amrutha Karuturi, an aspiring Data Scientist and Analyst, on a journey of innovation and exploration. Currently I'm looking for full time positions in
+            <a class="about-p-highlight">Data Science</a>,
+            <a class="about-p-highlight">Data Analyst</a>
+            <a class="about-p-highlight">Machine Learning</a>. . 
+            I completed my Master of Science degree in Data Science at 
+            <a class="about-p-highlight" href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers University - New Brunswick</a> in May, 2025. I have a bachelors degree in Computer science from IIT Jodhpur, India.
+            My academic journey revolved around advanced coursework, encompassing topics such as Statistical Modeling, Statistical Learning, Data Mining, 
+            Natural Language Processing, Data Wrangling and more.
+        </p>
+        
+        <h1>Honors and Activities</h1>
+        <div class = "grid-container">
+            <a href="https://www.linkedin.com/in/amrutha-karuturi-017096245/overlay/1749839092293/single-media-viewer/?profileId=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+                <div class="grid-boxes">
+                    <p><span class="bold-text">Neville O'Reilly Award</span>, Department of Statistics, Rutgers university</p>
+                    <img src="assets/images/oreilly-award.png">
+                    <!-- <img src=""> -->
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/posts/amrutha-karuturi-017096245_machinelearning-ai-llms-activity-7300892608505995266-HgbG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+                <div class="grid-boxes">
+                    <p><span class="bold-text">Winner</span> of 2024 Bristol Myers Squibb Hackathon, Rutgers University</p>
+                    <img src="">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/posts/rutgers-masters-in-public-informatics_publicinformatics-rutgersmpi-datascience-activity-7304210057297068032-cQoT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+                <div class="grid-boxes"><p><span class="bold-text">Finalist</span> in RAISE-2025 Hackathon, Rutgers University</p></div>
+            </a>
+
+            <div class="grid-boxes">
+                <p>Ranked in Top 0.4% amongst 1.2 million in a nationwide engineering entrance examination - JEE Advanced.</p>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
