@@ -4,52 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <!--left box -->
-        <div id="l">
-            <div class="blank blank-1"></div>
+    <div id="main-grid">
+        <div class="left">
             <div class="photo">
-                <img src="/assets/images/photo.jpg">
+                <img src="assets/images/photo.jpg">
             </div>
-            <div class="blank blank-05"></div>
             <div class="name">
                 <p>Amrutha Karuturi</p>
             </div>
-            <div class="list">
+            <div class="contact-info">
                 <ul>
-                    <li><a href = "https://github.com/amrutha2508" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href = "https://www.linkedin.com/in/amrutha-karuturi-017096245/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href = "https://github.com/amrutha2508" target="_blank">GitHub</a></li>
+                    <li><a href = "https://www.linkedin.com/in/amrutha-karuturi-017096245/" target="_blank">LinkedIn</a></li>
                     <li><a href = "https://public.tableau.com/app/profile/amrutha.k2872/vizzes">Tableau</a></li>
-                    <a></a>
+                    <li><a href="mailto:amrutha.k5637@gmail.com">Email</a></li>
                 </ul>
             </div>
+            
+            <div class="other-links"></div>
         </div>
-        <!-- right box -->
-        <div id="r">
-            <div class="blank blank-r1"></div>
-            <!-- right box1 -->
-            <div id="r1">
-                <div id="button-container">
-                    <button onclick="loadContent('about.html')">About Me</button>
-                    <button onclick="loadContent('experience.html')">Professional Experience</button>
-                    <button onclick="loadContent('projects.html')">Projects</button>
-                    <button onclick="loadContent('certifications.html')">Certifications</button>
+        <div class="right">
+            <div class="title-option-section">
+                <div>
+                    <div class="selected-option">
+                        <p>Content</p>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="buttons-block">
+                        <div class="about block">About</div>
+                        <div class="resume block">Resume</div>
+                        <div class="projects block">Projects</div>
+                        <div class="skils block">Skills</div>
+                    </div>
+                    <div class="blank1">
+                    </div>
                 </div>
             </div>
-            <!-- <div class="blank blank-r2"></div> -->
-            <!-- right box2 -->
-            <div id="r2">
-
+            <div class="content-block">
+                    <li>Panel</li>
+                    <li>Panel</li>
+                    <li>Panel</li>
+                    <li>Panel</li>
             </div>
-
         </div>
-    </div>
     <script src="index.js" charset="UTF-8"></script>
 </body>
 </html>
