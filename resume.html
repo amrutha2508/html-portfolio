@@ -1,0 +1,303 @@
+<style>
+    .timeline { margin-bottom: 30px; }
+
+    .timeline .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    }
+    h1{
+        color:white;
+    }
+    h2{
+        color:white;
+        font-size: large;
+    }
+
+    .timeline-list {
+    font-size: var(--fs-6);
+    margin-left: 45px;
+    }
+
+    .timeline-item { position: relative; }
+
+    .timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+    .timeline-item-title {
+    font-size: var(--fs-6);
+    line-height: 1.3;
+    margin-bottom: 7px;
+    color: white;
+    }
+
+    .timeline-item .program {
+    color: #ffdb70;
+    font-weight: var(--fw-400);
+    line-height: 1.6;
+
+    }
+
+    .timeline-item .right-align {
+    color: var(--white-2);
+    font-weight: var(--fw-300);
+    margin-right: 15px;
+    text-align: right;
+    float: right;
+    }
+
+    .timeline-item .right-align-gold {
+    color: var(--vegas-gold);
+    margin-right: 20px;
+    text-align: right;
+    float: right;
+    }
+
+    .timeline-text-ul {
+    font-size: var(--fs-6);
+    margin-left: 15px;
+    color: var(--light-gray);
+    list-style-type: disc; /* This ensures bullet points for the list items */
+    }
+
+    .timeline-text-ul-item {
+    color: var(--light-gray);
+    font-weight: var(--fw-300);
+    list-style-type: disc; 
+    }
+
+    .timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: var(--jet);
+    }
+
+    .timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 6px;
+    background: var(--text-gradient-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--jet);
+    }
+
+    .timeline-text {
+    color: lightgray;
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    }
+
+    .archive-link {
+    display: inline;
+    color: var(--vegas-gold);
+    text-decoration: none;
+    }
+
+    .archive-link:hover {
+    color: gold;
+    text-decoration: none;
+    }
+    .container{
+        display:flex;
+        gap:10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .points{
+        background-color: #2b2b2cbf;
+        flex-basis:100px;
+        text-align: center;
+        border-radius: 10px;
+        color:white;
+    }
+
+</style>
+
+<body>
+
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h1>Education</h1>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Rutgers University
+              <span class="right-align">New Brunswick, NJ, USA</span>
+            </h4>
+            
+            <span class="program">Masters of Science in Statistics - Data Science
+              <span class="right-align-gold">Sept, 2023 - May, 2025</span>
+            </span>
+
+            <p class="timeline-text">
+              Statistical Modeling, Stat Learning, Neural Networks, Machine
+              Learning, Data Structures and Algorithms(Python), Database Management, Data Wrangling (R), NLP, Data Mining.
+            </p>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Indian Institute of Technology Jodhpur
+              <span class="right-align">Jodhpur, India</span>
+            </h4>
+
+            <span class="program">B.Tech in Computer Science
+              <span class="right-align-gold">July, 2018 - July, 2022</span>
+            </span>
+
+            <p class="timeline-text">
+              Data Structures and Algorithms, Object-Oriented Programming, Embedded Systems, Machine Learning.
+            </p>
+
+          </li>
+
+        </ol>
+
+        </section>
+        <hr>
+        <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h1>Professional Experience</h1>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Bristol Myers Squibb
+              <span class="right-align">New Brunswick, NJ, USA</span>
+            </h4>
+            
+            <span class="program">Data Science Research Assistant
+              <span class="right-align-gold">Oct, 2024 - Dec, 2024</span>
+            </span>
+
+            <p class="timeline-text">
+                <ul>
+                    <li class="timeline-text">Designed and implemented an AI-powered pipeline using large language models (LLMs) to automate the mapping of
+                        inconsistencies in historical medical data to standardized naming conventions, enhancing data reliability for analysis.</li>
+                    <li class="timeline-text">Augmented the training set from 32 to 45,456 samples using regex patterns, abbreviation expansion, token deletion,
+                        and oversampling to support robust LLM training.</li>
+                    <li class="timeline-text">Developed a hierarchical classification framework combining Bio-BERT for attribute grouping with a FastText and
+                        neural network ensemble to resolve semantic variations, achieving 42.2% classification accuracy, generating
+                        prediction sets for 47.6% of entries to streamline manual review, and flagging 10.2% of data as junk.</li>
+                    <li class="timeline-text">Collaborated with stakeholders to gather business requirements, extract and analyze data, perform rigorous data
+                        cleaning, define key metrics, and deliver insightful reports.</li>
+                    
+                </ul>
+            </p>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Department of Computer Science, Rutgers University
+              <span class="right-align">New Brunswick, NJ, USA</span>
+            </h4>
+
+            <span class="program">Recitation Instructor, Data101 course
+              <span class="right-align-gold">Sept 2024, 2017 - May, 2025</span>
+            </span>
+
+            <p class="timeline-text">
+                <ul>
+                    <li class="timeline-text">Communicated data science and machine learning concepts clearly to diverse audiences</li>
+                    <li class="timeline-text">Developed practical, hands-on materials to support student understanding of data validation, feature engineering,
+                        predictive modeling, and statistical analysis.</li>
+                </ul>
+            </p>
+
+            </li>
+
+        </ol>
+
+        </section>
+        <hr>
+        <section>
+            <h1>My skills</h1>
+            <div>
+                <h2>Languages</h2>
+                <div class="container">
+                    <div class="points"><p>Python</p></div>
+                    <div class="points"><p>R</p></div>
+                    <div class="points"><p>SQL</p></div>
+                    <div class="points"><p>Javascript</p></div>
+                    <div class="points"><p>C++</p></div>
+                    <div class="points"><p>HTML</p></div>
+                    <div class="points"><p>CSS</p></div>
+                    <div class="points"><p>Bash</p></div>
+                    <div class="points"><p>Shell scripting</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Data Science</h2>
+                <div class="container">
+                    <div class="points"><p>Machine Learning</p></div>
+                    <div class="points"><p>Statistical Modeling</p></div>
+                    <div class="points"><p>NLP</p></div>
+                    <div class="points"><p>Neural networks</p></div>
+                    <div class="points"><p>Data Visualization</p></div>
+                    <div class="points"><p>Webs Scraping</p></div>
+                    <div class="points"><p>Large Language Models</p></div>
+                    <div class="points"><p>ETL</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Frameworks & Libraries</h2>
+                <div class="container">
+                    <div class="points"><p>NumPy</p></div>
+                    <div class="points"><p>Pandas</p></div>
+                    <div class="points"><p>Scikit-Learn</p></div>
+                    <div class="points"><p>Seaborn</p></div>
+                    <div class="points"><p>PyTorch</p></div>
+                    <div class="points"><p>NLTK</p></div>
+                    <div class="points"><p>Matplotlib</p></div> 
+                    <div class="points"><p>Plotly</p></div>  
+                    <div class="points"><p>BeautifulSoup</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Tools & OS</h2>
+                <div class="container">
+                    <div class="points"><p>Tableau</p></div>
+                    <div class="points"><p>Jupyter Notebook</p></div>
+                    <div class="points"><p>Git</p></div>
+                    <div class="points"><p>MongoDB(NoSQL)</p></div>
+                    <div class="points"><p>MySQL</p></div>
+                    <div class="points"><p>Tableau</p></div>
+                    <div class="points"><p>PostgreSQL</p></div>
+                    <div class="points"><p>Excel</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Cloud services</h2>
+                <div class="container">
+                    <div class="points"><p>AWS</p></div>
+                </div>
+            </div>
+        </section>
+</body>

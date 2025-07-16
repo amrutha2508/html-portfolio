@@ -2,16 +2,99 @@
 <style>
     /* You can put styles specific to this content here, but make them scoped */
     /* For example, target elements within this specific content block */
-    .about-content h1 {
-        color: green; /* Just an example to show it's scoped */
+    .about-content p{
+        color: white; /* Just an example to show it's scoped */
     }
+    .about-p-highlight{
+        color: #ffdb70;
+    }
+    .about-content h1{
+        color: white;
+        padding-bottom: 0px;
+        font-size: xx-large;
+    }
+
+    .about-content{
+        background-color: transparent;
+        padding: 10px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .about-content img{
+        height:150px;
+        width:200px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    .grid-boxes{
+        display: flex;
+        flex-direction: column;
+        border:2px solid rgba(101, 98, 98, 0.948);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #2b2b2cbf;
+    }
+    .grid-boxes p{
+        margin:0;
+        text-align: center;
+    }
+    .grid-boxes img{
+        padding-top: 10px;
+    }
+    .grid-link{
+        text-decoration: none;
+    }
+    .grid-boxes:hover {
+        border-color: #ffdb70;
+        background-color: #ffdb70;
+        cursor: pointer;
+    }
+    .grid-boxes:hover p{
+        color: black;
+    }
+    
 </style>
 <div class="about-content">
     
-    <h1>I'm in ABOUT</h1>
-    <p>This is the content for the About section. It should only contain what you want to see here.</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
+    <p>
+        Hello, I'm Amrutha Karuturi, an aspiring Data Science Graduate, on a journey of innovation and exploration. Currently I'm looking for full-time positions in
+        <a class="about-p-highlight">Data Science</a>,
+        <a class="about-p-highlight">Machine Learning</a>,
+        <a class="about-p-highlight">Data Analyst/Engineer</a>. . 
+        I completed my Master of Science degree in Data Science at 
+        <a class="about-p-highlight" href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers University - New Brunswick</a> in May,2025. 
+        My academic journey revolved around advanced coursework, encompassing topics such as Statistical Modeling, Statistical Learning, Data Mining, 
+        Natural Language Processing, Data Wrangling and more.
+    </p>
+    <hr>
+    <h1>Honors and Activities</h1>
+
+    <div class = "grid-container">
+        <a href="https://www.linkedin.com/in/amrutha-karuturi-017096245/overlay/1749839092293/single-media-viewer/?profileId=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+            <div class="grid-boxes">
+                <p>Neville O'Reilly Award, Department of Statistics, Rutgers university</p>
+                <img src="assets/images/oreilly-award.png">
+                <!-- <img src=""> -->
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/posts/amrutha-karuturi-017096245_machinelearning-ai-llms-activity-7300892608505995266-HgbG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+            <div class="grid-boxes">
+                <p>Winner of 2024 Bristol Myers Squibb Hackathon, Rutgers University</p>
+                <img src="">
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/posts/rutgers-masters-in-public-informatics_publicinformatics-rutgersmpi-datascience-activity-7304210057297068032-cQoT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyz0ZMBSdRAMiQwrkU8gi64p7QKAgNof10" target="_blank" class="grid-link">
+            <div class="grid-boxes"><p>Finalist in RAISE-2025 Hackathon, Rutgers University</p></div>
+        </a>
+
+        <div class="grid-boxes">
+            <p>Ranked in Top 0.4% amongst 1.2 million in a nationwide engineering entrance examination - JEE Advanced.</p>
+        </div>
+        
+    </div>
 </div>
