@@ -9,18 +9,30 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1px;
         background-color: #6766660f;
         border-radius: 10px;
         border: 2px solid rgba(101, 98, 98, 0.948);
-        padding-top:10px;
+        padding:20px;
     }
     .project-tags ul{
-        display: flex;
+        display: inline-flex;
+        flex-wrap: wrap;
         flex-direction: row;
         gap:10px;
         color:lightgray;
         justify-content: space-evenly;
-        padding-left: 0px;
+        margin:0;
+
+    }
+    .project-tags ul li{
+        padding-right: 10px;
+        font-size: smaller;
+    }
+    .project-boxes ul li{
+        color: lightgray;
+        padding-right: 10px;
+        font-size: smaller;
     }
     .image{
         background-color: lightgrey;
@@ -29,65 +41,111 @@
         justify-content: center;
         
     }
+    .image img{
+        height: 200px;
+        width:300px;
+        object-fit: cover;
+        
+    }
     .project-container h1{
         color:white;
+        margin:0;
     }
     .project-container p{
         color:lightgray;
+        margin:0;
+        font-size: smaller;
     }
+    .project-boxes h1{
+        font-size: large;
+    }
+
+
+    .project-boxes:hover {
+        border-color: #ffdb70;
+        background-color: #ffdb70;
+        cursor: pointer;
+    }
+    .project-boxes:hover p,
+    .project-boxes:hover h1,
+    .project-boxes:hover ul,
+    .project-boxes:hover li {
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
 
 </style>
 
 <body>
     <div class="project-container">
-        <div class="project-boxes">
-            <div class="image"></div>
-            <div class="project-tags">
-                <ul>
-                    <li>tag1</li>
-                    <li>tag2</li>
-                    <li>tag3</li>
-                </ul>
+        <a href="projects/ai-headline.html" target="_blank">
+            <div class="project-boxes">
+                <div class="image"><img src="assets/images/ai-headlines.png"></div>
+                <div class="project-tags">
+                    <ul>
+                        <li>NLP</li>
+                        <li>BERTopic</li>
+                        <li>Multi-Label Classification</li>
+                    </ul>
+                </div>
+                <h1>Our Future with AI: Utopia or Dystopia</h1>
+                <p>Discovering the promises and challenges of a future with AI by analyzing news headlines.
+                    This NLP-based project aims to explore how AI is portrayed across various domains in the media by extracting key topics, classifying them into broader categories, and analyzing the sentiment and emotional tone of each headline. The goal is to understand public perception and media framing of AI as either utopian or dystopian.</p>
             </div>
-            <h1>project-name</h1>
-            <p>project-info</p>
-        </div>
-        <div class="project-boxes">
-            <div class="image"></div>
-            <div class="project-tags">
-                <ul>
-                    <li>tag1</li>
-                    <li>tag2</li>
-                    <li>tag3</li>
-                </ul>
+        </a>
+        <a href="projects/fclip.html" target="_blank">
+            <div class="project-boxes">
+                <div class="image"><img src="assets/images/fclip.png"></div>
+                <div class="project-tags">
+                    <ul>
+                        <li>CLIP</li>
+                        <li>Zero-Shot</li>
+                        <li>Vision-Language Models</li>
+                    </ul>
+                </div>
+                <h1>Fine-tuning OpenAI CLIP for fashion understanding</h1>
+                <p>This project focuses on fine-tuning OpenAI’s CLIP model using a fashion-specific dataset of 44,000 image-text pairs to enhance its understanding of fashion attributes. Performance is benchmarked against the original CLIP and FashionCLIP models across key tasks such as image retrieval from text, zero-shot classification, and visual attribute localization. The goal is to evaluate how domain-specific fine-tuning improves CLIP’s effectiveness in fashion-related applications.</p>
             </div>
-            <h1>project-name</h1>
-            <p>project-info</p>
-        </div>
-        <div class="project-boxes">
-            <div class="image"></div>
-            <div class="project-tags">
-                <ul>
-                    <li>tag1</li>
-                    <li>tag2</li>
-                    <li>tag3</li>
-                </ul>
+        </a>
+        <a href="projects/bms.html" target="_blank">
+            <div class="project-boxes">
+                <div class="image"><img src="assets/images/bms_project.png"></div>
+                <div class="project-tags">
+                    <ul>
+                        <li>Healthcare Data</li>
+                        <li>Data Augmentation</li>
+                        <li>LLMs</li>
+                    </ul>
+                </div>
+                <h1>Automated Standardization of Historical Clinical Data Attributes</h1>
+                <p>This project, conducted in collaboration with Bristol Myers Squibb (BMS), addresses the challenge of aligning inconsistent attribute names in historical clinical datasets to enable reliable AI/ML-driven decision-making. A Python-based pipeline was developed to map combinations of Analysis and Attribute fields from the bms_data dataset to standardized naming conventions in the Standard Names reference dataset. The system outputs three distinct sets: Mapped Data (confident matches), Indecisive Data (ambiguous matches), and Junk Data (no valid mapping), significantly reducing manual effort and improving data readiness for downstream analytics.</p>
             </div>
-            <h1>project-name</h1>
-            <p>project-info</p>
-        </div>
-        <div class="project-boxes">
-            <div class="image"></div>
-            <div class="project-tags">
+        </a>
+        <a href="projects/fact-check.html" target="_blank">
+            <div class="project-boxes">
+                <div class="image"><img src="assets/images/fact-check.png"></div>
+                <div class="project-tags">
+                    <ul>
+                        <li>NLP</li>
+                        <li>Transformer Models</li>
+                        <li>class-imbalance</li>
+                    </ul>
+                </div>
+                <h1>Fact-Checking on Public Health Claims</h1>
+                <p>This project focuses on building an explainable NLP pipeline for fact-checking public health claims sourced from social media. Using the PUBHEALTH dataset, we evaluate multiple models including Logistic Regression, Neural Networks, DistilBERT, and SciBERT. The goal is to classify claims into one of four categories:</p>
                 <ul>
-                    <li>tag1</li>
-                    <li>tag2</li>
-                    <li>tag3</li>
+                    <li>True: The claim is fully supported by the public health document.</li>
+                    <li>False: The claim contradicts the information in the document.</li>
+                    <li>Mixture: The claim contains both accurate and inaccurate elements.</li>
+                    <li>Unproven: The available evidence is insufficient to verify the claim.</li>
                 </ul>
+                <p>We address challenges like domain-specific language, overfitting, and class imbalance.</p>
             </div>
-            <h1>project-name</h1>
-            <p>project-info</p>
-        </div>
+        </a>
     </div>
 </body>
 </html>
